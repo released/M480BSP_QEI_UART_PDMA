@@ -190,7 +190,7 @@ void QEI0_Process(void)
 	{
 		set_flag(flag_UART_PDMA , DISABLE);
 
-		sprintf(str, "Encoder:%d", value);
+		sprintf(str, "QEI0_Process:%d", value);
 
 		UART_TX_PDMA((uint8_t*)str,strlen(str));
 		
